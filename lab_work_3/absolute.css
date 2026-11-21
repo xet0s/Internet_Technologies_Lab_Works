@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #ECECEC; font-weight: bold; font-family: Tahoma, Geneva, sans-serif; color: #FFF; text-align: center; line-height: 24px; }
+h1 { color: #000; font-weight: normal; padding: 50px; }
+#wrapper { background-color: #FFF; border: 1px solid #000; width: 800px; height: 600px; margin: 0 auto; position: relative; }
+#red, #green, #blue, #purple { width: 150px; height: 150px; position: absolute; line-height: 150px; }
+#red { background-color: #900; top: 0; left: 0; }
+#green { background-color: #090; top: 0; right: 0; }
+#blue { background-color: #00F; bottom: 0; left: 0; }
+#purple { background-color: #63C; bottom: 0; right: 0; }
+#footer { background-color: #666; width: 150px; height: 150px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); line-height: 150px; }

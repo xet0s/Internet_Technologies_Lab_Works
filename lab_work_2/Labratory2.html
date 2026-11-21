@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            border-bottom:2px solid #ddd;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+        }
+
+        .salad_menu {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        .Hot_dishes {
+            background-color: #fff3e0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        .dessert_menu {
+            background-color: #fce4ec;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        .dishes {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: underline;
+            display: inline-block;
+        }
+        .is_new {
+            color: red;
+            font-weight: bold;
+            margin-left: 6px;
+        }
+        .price {
+            color:red;
+            font-style: italic;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .description {
+            display: block;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 2px;
+            margin-bottom: 6px;
+        }
+        .table-section {
+            margin-top: 40px;
+        }
+        table.table1 {
+            width: 100%;
+            border: 4px double #000;
+            border-collapse: separate;
+            margin-bottom: 30px;
+        }
+        table.table1 td {
+            border: 2px double #000;
+            padding: 15px;
+        }
+        table.table2 {
+            width: 50%;
+            border: 4px double #000;
+            border-collapse: separate;
+            margin-bottom: 30px;
+        }
+        table.table2 th, table.table2 td {
+            border: 2px double #000;
+            padding: 8px;
+            text-align: left;
+        }
+        table.table3 {
+            width: auto;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table.table3 caption {
+            color: red;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 6px;
+            caption-side: top;
+        }
+        table.table3 th, table.table3 td {
+            border: 1px solid #000;
+            padding: 6px 12px;
+            text-align: left;
+        }
+        .media-section {
+            margin-top: 40px;
+            border-top: 2px solid #ddd;
+            padding-top: 20px;
+        }
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .media-item {
+            flex: 1;
+            min-width: 300px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Panorama HOTEL Menu</h1>
+        <p>HOTEL PANORAMA, Sodų g. 14, Vilnius LT-03211, Lithuania</p>
+    </header>
+    <section class="salad_menu">
+        <h2>Salads and cold dishes</h2>
+        <ul>
+            <li>
+                <span class="dishes">Raw salmon appetizer</span>
+                <span class="description">Raw salmon fillet, large capers, zucchini, parmesan. Served with toasted bread and a slice of lemon.</span>
+                <span class="price">€ 7.00</span>
+            </li>
+            <li>
+                <span class="dishes">Raw beef appetizer</span>
+                <span class="is_new">New</span>
+                <span class="description">Raw beef, parmesan, olive oil and balsamic vinegar dressing. Served with toast and a lemon wedge</span>
+                <span class="price">€ 8.00</span>
+            </li>
+            <li>
+                <span class="dishes">Herring appetizer </span>
+                <span class="description">Herring fillet rolls, pickled cucumbers, large capers, blue onions, mayonnaise. Served with black bread toast.</span>
+                <span class="price">€ 6.00</span>
+            </li>
+            
+        </ul>
+    </section>
+    <section class="Hot_dishes">
+        <h2>Hot dishes</h2>
+        <ul>
+            <li>
+                <span class="dishes">Vegetable layered with goat cheese</span>
+                <span class="description">Zucchini, peppers, eggplant, tomatoes, goat cheese, basil sauce.</span>
+                <span class="price">€ 10.00</span>
+            </li><li>
+                <span class="dishes">Potato chips with salmon</span>
+                <span class="is_new">New</span>
+                <span class="description">Potato chips with pieces of salted salmon. Served with Greek sauce.</span>
+                <span class="price">€ 9.00</span>
+            </li>
+            <li>
+                <span class="dishes">Italian pasta with spinach </span>
+                <span class="description">Ribbon pasta, spinach, sun-dried tomatoes, pine nuts, cream sauce</span>
+                <span class="price">€ 8.00</span>
+            </li>
+        </ul>
+    </section>
+    <section class="Dessert_menu">
+        <h2>Sweet Dishes</h2>
+        <ul>
+            <li>
+                <span class="dishes">Cake of the day</span>
+                <span class="description">Ask the waitress</span>
+                <span class="price">€ 5.00</span>
+            </li>
+            <li>
+                <span class="dishes">Refreshing pineapple slice treat </span>
+                <span class="description">Pineapple slices seasoned with lemongrass sauce. Served with chocolate cupcake and lemon sorbet.</span>
+                <span class="price">€ 6.00</span>
+            </li>
+            <li>
+                <span class="dishes">Dark chocolate treat with caramel hazelnut sauce </span>
+                <span class="description">Chocolate sponge cake, forest berry jellies, caramel-covered hazelnuts.</span>
+                <span class="price">€ 7.00</span>
+            </li>
+            <li>
+                <h2>Pirma Lentelė</h2>
+                <table class="table1">
+                    <tr>
+                        <td style="width: 50%;">Viešbučio simbolika</td>
+                        <td style="width: 50%;">
+                            <ul>
+                                <li>Meniu</li>
+                                <li>À la carte meniu</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+            <h2>Antra Lentelė</h2>
+            <table class="table2">
+                <tr>
+                    <th rowspan="2">Patiekalas</th>
+                    <th colspan="2">Patiekalo aprašymas</th>
+                </tr>
+                <tr>
+                    <th>Paveikslėlis</th>
+                    <th>Aprašymas</th>
+                </tr>
+                <tr>
+                    <td>Raw salmon appetizer</td>
+                    <td>
+                        <a href="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=1000" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=120" alt="Salmon" width="120">
+                        </a>
+                    </td>
+                    <td>Raw salmon fillet, large capers, zucchini, parmesan. Served with toasted bread and a slice of lemon.</td>
+                </tr>
+            </table>
+            </li>
+            <li>
+            <h2>Trečia Lentelė</h2>
+                <table class="table3">
+                    <caption>Darbuotojų sąrašas</caption>
+                    <tr>
+                        <th colspan="3">Restorane dirba:</th>
+                    </tr>
+                    <tr>
+                    <th>Pavardė</th>
+                    <th>Vardas</th>
+                    <th>Pareigos</th>
+                </tr>
+                <tr>
+                    <td>Kazlauskas</td>
+                    <td>Jonas</td>
+                    <td>Chef</td>
+                </tr>
+                <tr>
+                    <td>Petrauskaitė</td>
+                    <td>Rasa</td>
+                    <td>Waitress</td>
+                </tr>
+               </table>
+            </li> 
+        </ul>
+    </section>
+    <section class="media-section">
+            <h2>Location & Media</h2>
+            <div class="media-container">
+                
+                
+                <div class="media-item">
+                    <h2>YouTube Video</h2>
+                    <iframe width="100" height="220" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+
+                
+                <div class="media-item">
+                    <h2>Restaurant Video</h2>
+                    <video width="100" height="220" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+            
+                <div class="media-item">
+                    <h2>Location Map</h2>
+                    <iframe width="100" height="220" src="https://maps.google.com/maps?q=HOTEL%20PANORAMA,%20Sod%C5%B3%20g.%2014,%20Vilnius&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+
+            </div>
+        </section>
+    <footer>
+        <p><strong>Restaurant Panorama</strong></p>
+        <p>Takes into account the unique wishes of guests and clients. Professionally organizes any reception, banquet or buffet.</p>
+    </footer>
+</body>
+</html>

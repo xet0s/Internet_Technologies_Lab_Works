@@ -1,0 +1,509 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-weight: bold;
+    background-color: #ecf8ec;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    left: 5%;
+}
+header {
+    width: 100%;
+    background: #353434;
+}
+header .logo {
+    float: left;
+    margin-top: 21px;
+}
+header nav {
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    padding: 13px 10px;
+    font-family: 'Oswald', sans-serif; /* Google Font Oswald */
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    float: left;
+    margin-left: 35px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif; /* Google Font Oswald */
+    letter-spacing: 1px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+    color: #45ba45;
+}
+header ul.social {
+    float: right;
+    list-style: none;
+    margin-top: 23px;
+}
+header ul.social li {
+    float: left;
+    margin-left: 10px;
+}
+header ul.social li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../img/sm.png') no-repeat;
+}
+header ul.social li a.fb {
+    background-position: 0 0;
+}
+header ul.social li a.twitter {
+    background-position: -36px 0;
+}
+header ul.social li a.gplus {
+    background-position: -72px 0;
+}
+.billboard {
+    width: 100%;
+    height: 580px;
+    background: url("../img/peleda.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.65;
+    transition: opacity 0.4s ease;
+}
+.billboard:hover {
+    opacity: 1; 
+}
+.billboard .caption {
+    margin-left: 600px;
+    margin-top: 220px;
+}
+.billboard .caption p {
+    display: inline-block;
+    color: #000;
+    font-family: "avantgardelt-extralight", arial;
+    font-weight: lighter;
+    font-size: 35px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.features {
+    width: 100%;
+    min-height: 400px;
+    padding: 100px 0;
+    background: #ecf8ec;
+    margin: 0 auto; 
+}
+.features .feature {
+    display: inline-block;
+    width: 346px;
+    height: auto;
+    margin-right: 80px;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+.feature .ficon {
+    display: block;
+    width: 65px;
+    float: left;
+    margin-right: 40px;
+}
+@keyframes iconFloat {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-6px) scale(1.08); }
+    100% { transform: translateY(0) scale(1); }
+}
+.feature .ficon img {
+    animation: iconFloat 2.5s infinite ease-in-out;
+    transition: transform 0.4s ease;
+}
+.feature .ficon img:hover {
+    transform: rotateY(180deg);
+}
+.feature .details_exp {
+    display: block;
+    width: 220px;
+    float: left;
+    margin-bottom: 10px;
+}
+.feature h3 {
+    margin-bottom: 20px;
+    color: #767575;
+    font-family: "lato_bold", arial;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.feature p {
+    margin-bottom: 20px;
+    color: #9e9e9e;
+    font-family: "lato_regular", arial;
+    font-size: 15px;
+    line-height: 22px;
+}
+.feature a {
+    color: #848484;
+    font-family: "lato_regular", arial;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+.feature a:hover {
+    color: #353434;
+}
+.feature a span {
+    font-family: arial;
+    margin-left: 10px;
+}
+table {
+    width: 80%;
+    position: relative; 
+    left: 10%;
+    background-color: #fff;
+}
+table, th, td {
+    border: 5px solid black;
+    font-size: 20px;  
+    padding: 10px;
+}
+th {
+    height: 50px;
+}
+table td, table th {
+    transition: background-color 0.25s ease;
+}
+table td:hover, table th:hover {
+    background-color: #c8e6c9;
+}
+.info {
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    background-color: #ecf8ec;
+    border-radius: 25px; /* Yuvarlak köşeler */
+}
+.info_pic {
+    width: 50%;
+    height: 420px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+}
+.info_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.info_details {
+    width: 50%;
+    height: 420px; 
+    background: #3b3b3b;
+    padding: 40px 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.info_details h3 {
+    color: #fff;
+    font-family: "lato_bold", arial;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 25px 20px;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+.info_details p {
+    color: #ededed;
+    font-family: "lato_regular", arial;
+    font-size: 16px;
+    margin: 0 0 25px 20px;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+.info_details a {
+    color: #fff;
+    font-family: "lato_regular", arial;
+    font-size: 16px;
+    margin: 0 0 0 20px;
+    text-decoration: none;
+}
+.info_details a span {
+    margin-left: 10px;
+}
+footer {
+    margin: 60px 0 30px 0;
+    border-top: 1px #dedede solid;
+    background-color: #ecf8ec;
+    text-align: center;
+}
+footer .rights {
+    color: #3b3b3b;
+    font-family: "lato_regular", arial;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+footer .rights a {
+    text-decoration: none;
+    font-family: 'lato_bold', arial;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+a {
+    color: #3b3b3b;
+}
+.clear {
+    clear: both;
+}
+
+.forms-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 15px;
+    font-weight: normal;
+}
+.form-box {
+    background-color: #f4f6f4;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.form-box h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.form-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-1 label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+.form-1 input[type="text"],
+.form-1 input[type="tel"],
+.form-1 input[type="email"],
+.form-1 textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 6px;
+    border: 1px solid #bbb;
+}
+.custom-fieldset {
+    border: 2px solid #000;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+.custom-fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+.option-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 450px;
+    margin: 6px 0;
+}
+.option-row label {
+    margin: 0;
+}
+
+.form-2 .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.form-2 .form-row label {
+    width: 35%;
+    font-weight: bold;
+}
+.form-2 .form-row input,
+.form-2 .form-row select {
+    width: 65%;
+    padding: 6px;
+    border: 1px solid #bbb;
+}
+.form-2 .notes-row {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-2 .notes-row label {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.form-2 textarea {
+    width: 100%;
+    max-width: 350px;
+    padding: 6px;
+    border: 1px solid #bbb;
+}
+.btn-submit {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border: 1px solid #666;
+}
+.btn-submit:hover {
+    background-color: #45ba45;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+        left: 0;
+    }
+    ul.social {
+        display: none;
+    }
+    header nav {
+        margin: 10px 0;
+        padding: 5px;
+    }
+    header nav ul li {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .billboard {
+        height: 250px;
+    }
+    .billboard .caption {
+        margin: 80px auto 0 auto;
+        text-align: center;
+    }
+    .billboard .caption p {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .features {
+        width: 100%;
+        padding: 20px 0;
+        height: auto;
+    }
+    .features .feature {
+        margin: 0 0 20px 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .feature .ficon {
+        width: 50px;
+        margin-right: 15px;
+        float: none;
+    }
+    .feature .details_exp {
+        width: calc(100% - 65px);
+        float: none;
+    }
+    table {
+        width: 95%;
+        left: 2.5%;
+        display: block;
+        overflow-x: auto;
+    }
+    table, th, td {
+        font-size: 14px;
+        border-width: 2px;
+    }
+    .info {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+    .info_pic, .info_details {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .info_details h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 10px;
+    }
+    .info_details p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px;
+    }
+    .form-2 .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-2 .form-row label,
+    .form-2 .form-row input,
+    .form-2 .form-row select {
+        width: 100%;
+    }
+}
